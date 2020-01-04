@@ -1,13 +1,13 @@
 package app.datacollect.twitchdata.feed.events.globalclearchat.v1;
 
-import app.datacollect.twitchdata.feed.events.Event;
+import app.datacollect.twitchdata.feed.events.EventData;
 import app.datacollect.twitchdata.feed.events.EventType;
 import app.datacollect.twitchdata.feed.events.ObjectType;
 import app.datacollect.twitchdata.feed.events.Version;
 import java.util.UUID;
 import org.json.JSONObject;
 
-public class GlobalClearChatEventV1 extends Event {
+public class GlobalClearChatEventV1 extends EventData {
 
   private final UUID id;
   private final String channel;

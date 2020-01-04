@@ -1,13 +1,14 @@
 package app.datacollect.twitchdata.feed.events.host.disabled.v1;
 
-import app.datacollect.twitchdata.feed.events.Event;
+import app.datacollect.twitchdata.feed.events.EventData;
 import app.datacollect.twitchdata.feed.events.EventType;
 import app.datacollect.twitchdata.feed.events.ObjectType;
 import app.datacollect.twitchdata.feed.events.Version;
 import java.util.UUID;
 import org.json.JSONObject;
 
-public class HostDisabledEventV1 extends Event {
+public class HostDisabledEventV1 extends EventData {
+
   private final UUID id;
   private final String channel;
   private final String time;

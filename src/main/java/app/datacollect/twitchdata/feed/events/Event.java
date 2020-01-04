@@ -1,13 +1,20 @@
 package app.datacollect.twitchdata.feed.events;
 
-import org.json.JSONObject;
+public class Event {
 
-public abstract class Event {
-  public abstract EventType getEventType();
+  private final EventData eventData;
+  private final Metadata metadata;
 
-  public abstract ObjectType getObjectType();
+  public Event(EventData eventData, Metadata metadata) {
+    this.eventData = eventData;
+    this.metadata = metadata;
+  }
 
-  public abstract Version getVersion();
+  public EventData getEventData() {
+    return eventData;
+  }
 
-  public abstract JSONObject toJson();
+  public Metadata getMetadata() {
+    return metadata;
+  }
 }
